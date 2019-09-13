@@ -1,0 +1,21 @@
+@import '~antd/dist/antd.css';
+@import "~slick-carousel/slick/slick.css";
+@import "~slick-carousel/slick/slick-theme.css";
+
+@import './scss/fonts.scss';
+@import './scss/navbar.scss';
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+.App {
+
+  .content {
+    background-color: #fff;
+  }
+}
