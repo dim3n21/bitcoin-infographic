@@ -6,7 +6,7 @@
 @import './scss/variables.scss';
 @import './scss/nav.scss';
 @import './scss/sliders.scss';
-@import './scss//statistic_circle.scss';
+@import './scss/ui/statistic_circle.scss';
 
 *,
 *::after,
@@ -14,6 +14,7 @@
   margin: 0;
   padding: 0;
   box-sizing: inherit;
+  overflow: hidden;
 }
 
 .App {

@@ -1,9 +1,11 @@
 import React from 'react';
 import { Statistic, Row, Col, Button } from 'antd';
+import Chart from '../Chart/Chart';
 
 const Slide1 = () => {
       return (
             <div className="bitcoin">
+                  
                  <Row>
                         <Col lg={{span: 12}} sm={{span: 24}}>
                               <div className="bitcoin_left">
@@ -12,10 +14,11 @@ const Slide1 = () => {
                               </div>
                         </Col>
                         <Col lg={{span: 12}} sm={{span: 24}}>
-                              <div className="bitcoin_right">
-                                    
+                              <div className="chart_title">
+                                    <span className="chart_title_header">Interest in searching for 'bitcoin' on Google.</span>
                               </div>
                               
+                              <Chart />
                         </Col>
                   </Row>
             </div>
