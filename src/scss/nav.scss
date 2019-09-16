@@ -1,0 +1,17 @@
+.navigation {
+      display: block;
+      width: 100%;
+      padding: 5rem 2rem 2rem 5rem;
+      &_list {
+            &-item {
+                  display: inline-block;
+                  font-size: 1.1rem;
+                  text-transform: uppercase;
+                  margin-left: 1.5rem;
+                  font-weight: 600;
+                  &-link {
+                        color: #333;
+                  }
+            }
+      }
+}

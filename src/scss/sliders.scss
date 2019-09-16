@@ -1,0 +1,14 @@
+.audience {
+      text-align: left;
+      
+      &_left {
+            padding: 6rem;
+            &_header {
+                  font-size: 4rem;
+            }
+            &_copy {
+                  font-size: 2rem;
+            }
+      }
+}
+
