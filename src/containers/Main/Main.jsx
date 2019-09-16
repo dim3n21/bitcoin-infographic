@@ -1,21 +1,21 @@
 import React, { Component } from 'react';
 import Slider from "react-slick";
 import Slide2 from '../../components/Slides/Slide2';
+import Slide1 from '../../components/Slides/Slide1';
 
 class Main extends Component {
 
       state = {
             slideNumber: null,
-            slideIndex: 0
+            slideIndex: 0,
       }
 
       updateSlideNumber = (n) => {
             this.setState({
                   ...this.state,
-                  slideNumber: n
+                  slideNumber: n,
             })
             this.slider.slickGoTo(n);
-
       }
 
       render() {
@@ -39,19 +39,19 @@ class Main extends Component {
                                           <a    
                                                 className="navigation_list-item-link"
                                                 onClick={() => this.updateSlideNumber(0)} >
-                                                Aidience </a>
+                                                Bitcoin </a>
                                     </li>
                                     <li className="navigation_list-item">
                                           <a    
                                                 className="navigation_list-item-link"
                                                 onClick={() => this.updateSlideNumber(1)} >
-                                                Popularity </a>
+                                                Audience </a>
                                     </li>
                                     <li className="navigation_list-item">
                                           <a    
                                                 className="navigation_list-item-link"
                                                 onClick={() => this.updateSlideNumber(2)} >
-                                                Mining </a>
+                                                Popularity </a>
                                     </li>
                                     <li className="navigation_list-item">
                                           <a    
@@ -63,10 +63,9 @@ class Main extends Component {
                         </div>
                         <div>
                               <Slider ref={slider => (this.slider = slider)} {...settings}>
+                                          <Slide1 />
                                           <Slide2 />
-                                          <Slide2 />
-                                          <Slide2 />
-                                          <Slide2 />
+                                          <Slide1 />
                               </Slider>
                         </div>
                   </div>

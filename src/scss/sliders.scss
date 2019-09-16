@@ -1,14 +1,85 @@
+// SLIDER - 1 -
+
+.bitcoin {
+      text-align: left;
+      &_left {
+            padding: 6rem;
+            &_header {
+                  font-size: 5rem;
+                  font-weight: 700;
+                  animation-name: moveInRight;
+                  animation-duration: 3s;
+            } 
+            &_copy {
+                  font-size: 1.5rem;
+
+                  animation-name: moveInUp;
+                  animation-duration: 3s;
+            }
+      }
+}
+
+
+// SLIDER - 2 -
+
 .audience {
       text-align: left;
       
       &_left {
             padding: 6rem;
             &_header {
-                  font-size: 4rem;
+                  font-size: 5rem;
+                  font-weight: 700;
+                  animation-name: moveInDown;
+                  animation-duration: 3s;
             }
             &_copy {
-                  font-size: 2rem;
+                  font-size: 1.5rem;
+
+                  animation-name: moveInUp;
+                  animation-duration: 3s;
             }
       }
 }
 
+@keyframes moveInDown {
+      0% {
+            opacity: 0;
+            transform: translateY(-50px)
+      }
+      80% {
+
+      }
+      100% {
+            opacity: 1;
+            transform: translate(0);
+      }
+}
+
+@keyframes moveInUp {
+      0% {
+            opacity: 0;
+            transform: translateY(50px)
+      }
+      80% {
+
+      }
+      100% {
+            opacity: 1;
+            transform: translate(0);
+      }
+}
+
+@keyframes moveInRight {
+      0% {
+            opacity: 0;
+            transform: translateX(-50px)
+      }
+      80% {
+
+      }
+      100% {
+            opacity: 1;
+            transform: translate(0);
+      }
+}

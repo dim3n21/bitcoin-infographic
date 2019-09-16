@@ -1,24 +1,25 @@
 .wrapper {
-	margin: 50px;
+	margin: 10px;
 	width: 400px;
-	height: 400px;
+	height: 250px;
 	overflow: hidden;
+	backface-visibility: hidden;
 	position:relative
 }
 
 .right {
-	border: #3f85a3 solid 15px;
-	height: 165px;
-	width: 165px;
-	border-radius:120px;
+	border: $base-color solid 20px;
+	height: 230px;
+	width: 230px;
+	border-radius:350px;
 	border-top-color: transparent;
 	border-left-color: transparent;
 	position: absolute;
 	transform: rotate(-45deg);
-	animation: rota2 1000ms linear;
-  -moz-animation: rota2 1000ms linear;
-  -o-animation: rota2 1000ms linear;
-  -webkit-animation: rota2 1000ms linear;
+	animation: rota2 500ms linear;
+  -moz-animation: rota2 500ms linear;
+  -o-animation: rota2 500ms linear;
+  -webkit-animation: rota2 500ms linear;
 }
 
 @keyframes rota2 {
@@ -41,18 +42,18 @@
 }
 
 .left {
-	border: #3f85a3 solid 15px;
-	height: 165px;
-	width: 165px;
-	border-radius:120px;
+	border: $base-color solid 20px;
+	height: 230px;
+	width: 230px;
+	border-radius:350px;
 	border-bottom-color: transparent;
 	border-right-color: transparent;
 	position: absolute;
 	transform: rotate(315deg);
-	animation: rota 2000ms linear;
-  -o-animation: rota 2000ms linear;
-  -moz-animation: rota 2000ms linear;
-  -webkit-animation: rota 2000ms linear;
+	animation: rota 1000ms linear;
+  -o-animation: rota 1000ms linear;
+  -moz-animation: rota 1000ms linear;
+  -webkit-animation: rota 1000ms linear;
 }
 @keyframes rota {
 	from {transform: rotate(-45deg);}
@@ -72,19 +73,21 @@
 }
 
 .middle {
-  color: #0987bc;
-  font-size: 18px;
+  color: $base-color-second;
+  text-align: center;
+  font-size: 20px;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
 	width: 130px;
 	height: 130px;
-	left: 25px;
-	top: 25px;
+	left: 50px;
+	top: 60px;
 	border-radius: 150px;
 	position: relative;
 	z-index: 4;
+	backface-visibility: hidden;
 }
 
 .popover {
@@ -96,10 +99,10 @@
 	left: -3px;
 	opacity:0;
 	z-index:2;
-	animation: popover 1000ms linear;
-  -moz-animation: popover 1000ms linear;
-  -o-animation: popover 1000ms linear;
-  -webkit-animation: popover 1000ms linear;
+	animation: popover 500ms linear;
+  -moz-animation: popover 500ms linear;
+  -o-animation: popover 500ms linear;
+  -webkit-animation: popover 500ms linear;
 }
 
 @keyframes popover {
