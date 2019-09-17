@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Bar, Line, Pie } from 'react-chartjs-2';
 
-class Chart extends Component {
+class ChartLine extends Component {
 
       state = {
             chartData: {
@@ -21,7 +21,7 @@ class Chart extends Component {
                         '#fff'
                       ],
                       borderColor: [
-                        '#E85A4F'
+                        '#95D2BA'
                       ],
                       borderWidth: 5
                     }
@@ -35,6 +35,7 @@ class Chart extends Component {
                        <Line
                               data={this.state.chartData}
                               options={{
+                                   
                                     legend: {
                                           display: false
                                       },
@@ -59,4 +60,4 @@ class Chart extends Component {
       }
 }
 
-export default Chart;
+export default ChartLine;

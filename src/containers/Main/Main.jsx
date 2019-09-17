@@ -1,7 +1,10 @@
 import React, { Component } from 'react';
 import Slider from "react-slick";
-import Slide2 from '../../components/Slides/Slide2';
+
 import Slide1 from '../../components/Slides/Slide1';
+import Slide2 from '../../components/Slides/Slide2';
+import Slide3 from '../../components/Slides/Slide3';
+
 
 class Main extends Component {
 
@@ -65,7 +68,8 @@ class Main extends Component {
                               <Slider ref={slider => (this.slider = slider)} {...settings}>
                                           <Slide1 />
                                           <Slide2 />
-                                          <Slide1 />
+                                          <Slide3 />
+                                          <Slide2 />
                               </Slider>
                         </div>
                   </div>

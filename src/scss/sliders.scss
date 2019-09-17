@@ -2,6 +2,7 @@
 
 .bitcoin {
       text-align: left;
+      font-family: 'Roboto', sans-serif;
       &_left {
             padding: 6rem;
             &_header {
@@ -12,7 +13,6 @@
             } 
             &_copy {
                   font-size: 1.5rem;
-
                   animation-name: moveInLeft;
                   animation-duration: 2s;
             }
@@ -32,6 +32,7 @@
 
 .audience {
       text-align: left;
+      font-family: 'Roboto', sans-serif;
       
       &_left {
             padding: 6rem;
@@ -46,6 +47,34 @@
 
                   animation-name: moveInUp;
                   animation-duration: 2s;
+            }
+      }
+}
+
+// SLIDER - 3 -
+
+.popularity {
+      text-align: left;
+      font-family: 'Roboto', sans-serif;
+      &_left {
+            padding: 6rem;
+            &_header {
+                  font-size: 5rem;
+                  font-weight: 700;
+                  animation-name: moveInLeft;
+                  animation-duration: 2s;
+            }
+            &_copy {
+                  font-size: 1.5rem;
+                  animation-name: moveInRight;
+                  animation-duration: 2s;
+            }
+      }
+
+      &_right {
+            &_counter {
+                  font-size: 5rem;
+                  font-weight: 900;
             }
       }
 }
@@ -96,6 +125,20 @@
       0% {
             opacity: 0;
             transform: translateX(50px)
+      }
+      80% {
+
+      }
+      100% {
+            opacity: 1;
+            transform: translate(0);
+      }
+}
+
+@keyframes moveInRight {
+      0% {
+            opacity: 0;
+            transform: translateX(-50px)
       }
       80% {
 

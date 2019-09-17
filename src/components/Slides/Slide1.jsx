@@ -1,6 +1,6 @@
 import React from 'react';
 import { Statistic, Row, Col, Button } from 'antd';
-import Chart from '../Chart/Chart';
+import Chart from '../Chart/ChartLine';
 
 const Slide1 = () => {
       return (
