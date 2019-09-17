@@ -4,6 +4,7 @@ import Slider from "react-slick";
 import Slide1 from '../../components/Slides/Slide1';
 import Slide2 from '../../components/Slides/Slide2';
 import Slide3 from '../../components/Slides/Slide3';
+import Slide4 from '../../components/Slides/Slide4';
 
 
 class Main extends Component {
@@ -69,7 +70,7 @@ class Main extends Component {
                                           <Slide1 />
                                           <Slide2 />
                                           <Slide3 />
-                                          <Slide2 />
+                                          <Slide4 />
                               </Slider>
                         </div>
                   </div>
