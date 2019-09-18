@@ -5,6 +5,7 @@ import Slide1 from '../../components/Slides/Slide1';
 import Slide2 from '../../components/Slides/Slide2';
 import Slide3 from '../../components/Slides/Slide3';
 import Slide4 from '../../components/Slides/Slide4';
+import { blockStatement } from '@babel/types';
 
 
 class Main extends Component {
@@ -37,40 +38,51 @@ class Main extends Component {
 
             return (
                   <div className="App">
+                        <div 
+                              style={{
+                                    textTransform: 'uppercase',
+                                    fontSize: '2rem',
+                                    color: '#FF634D',
+                                    display: 'block',
+                                    width: '100%',
+                                    padding: '3rem 0 0 4rem'
+                              }}>
+                              Email Marketing Statistic</div>
                         <div className='navigation'>
                               <ul className="navigation_list">
                                     <li className="navigation_list-item">
                                           <a    
                                                 className="navigation_list-item-link"
                                                 onClick={() => this.updateSlideNumber(0)} >
-                                                Bitcoin </a>
+                                                Openings</a>
                                     </li>
                                     <li className="navigation_list-item">
                                           <a    
                                                 className="navigation_list-item-link"
                                                 onClick={() => this.updateSlideNumber(1)} >
-                                                Audience </a>
+                                                Clients </a>
                                     </li>
                                     <li className="navigation_list-item">
                                           <a    
                                                 className="navigation_list-item-link"
                                                 onClick={() => this.updateSlideNumber(2)} >
-                                                Popularity </a>
+                                                Users </a>
                                     </li>
                                     <li className="navigation_list-item">
                                           <a    
                                                 className="navigation_list-item-link"
                                                 onClick={() => this.updateSlideNumber(3)} >
-                                                Fun Facts </a>
+                                                Automation </a>
                                     </li>
                               </ul>
                         </div>
                         <div>
                               <Slider ref={slider => (this.slider = slider)} {...settings}>
+                                          <Slide4 />
+                                          <Slide3 />
                                           <Slide1 />
                                           <Slide2 />
-                                          <Slide3 />
-                                          <Slide4 />
+                                          
                               </Slider>
                         </div>
                   </div>

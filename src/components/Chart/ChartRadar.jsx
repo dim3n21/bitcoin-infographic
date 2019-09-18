@@ -5,27 +5,17 @@ class ChartRadar extends Component {
 
       state = {
             chartData: {
-                  labels: ['Eating', 'Drinking'],
+                  labels: ['Mobile', 'Desktop'],
   datasets: [
     {
       label: 'My First dataset',
-      backgroundColor: '#FF634D',
+      backgroundColor: ['#FDD982','#95D2BA'],
       borderColor: '#fff',
       pointBackgroundColor: '#FF634D',
       pointBorderColor: '#fff',
       pointHoverBackgroundColor: '#fff',
       pointHoverBorderColor: '#FF634D',
-      data: [65, 11]
-    },
-    {
-      label: 'My Second dataset',
-      backgroundColor: '#95D2BA',
-      borderColor: '#fff',
-      pointBackgroundColor: '#95D2BA',
-      pointBorderColor: '#fff',
-      pointHoverBackgroundColor: '#fff',
-      pointHoverBorderColor: '#95D2BA',
-      data: [28, 48]
+      data: [43,57]
     }
   ]
             }

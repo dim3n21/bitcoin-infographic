@@ -10,13 +10,16 @@ const Slide4 = () => {
                   <Row>
                         <Col lg={{span: 12}} sm={{span: 24}}>
                               <div className="popularity_left">
-                                    <h2 className="popularity_left_header" >What about mining?</h2>
-                                    <p className="popularity_left_copy">Average bitcoin mining difficulty has increased more than sixfold in the last year, from 336.8999G on January 14, 2017, to 2.2278T on January 14, 2018.</p>
+                                    <h2 className="popularity_left_header" >Desktop VS Mobile</h2>
+                                    <p className="popularity_left_copy">About 63% of emails are opened on mobile devices. – <a     href="https://www.campaignmonitor.com"
+                                                      style={{textDecoration: 'none',
+                                                      color: '#FF634D'
+                                                            }} target="_blank">Campaign Monitor</a></p>
                               </div>
                         </Col>
                         <Col lg={{span: 12}} sm={{span: 24}}>
                               <div className="popularity_right">
-                                    <Row style={{padding: '2rem'}}>
+                                    <Row>
                                           <Col span={24}>
                                                 <ChartRadar />
                                           </Col>
@@ -25,18 +28,18 @@ const Slide4 = () => {
                                           <Col span={12} align="center">
                                                 <div style={{
                                                       paddingLeft: '10px',
-                                                      marginBottom: '-15px'}}>something</div>
-                                                <CountUp className="popularity_right_counter" style={{color: '#FF634D'}} end={56} />
+                                                      marginBottom: '-15px'}}>Mobile</div>
+                                                <CountUp className="popularity_right_counter" style={{color: '#95D2BA'}} end={57} />
                                                 
                                           </Col>
                                           <Col span={12} align="center">
                                                 <div style={{
                                                       paddingLeft: '10px',
-                                                      marginBottom: '-15px'}}>something</div>
+                                                      marginBottom: '-15px'}}>Desktop</div>
                                                 <CountUp
                                                       className="popularity_right_counter"
                                                       style={{color: '#FDD982'}}
-                                                      end={56} />
+                                                      end={43} />
                                                 
                                           </Col>
                                     </Row>

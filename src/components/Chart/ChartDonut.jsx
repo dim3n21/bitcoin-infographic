@@ -5,14 +5,15 @@ class ChartDonut extends Component {
 
       state = {
             chartData: {
-                  labels: [ '2017', '2018', '2019'],
+                  labels: [ 'Gmail', 'iPhone', 'Apple Mail', 'Oulook 2013'],
                   datasets:[
                     {
                         label: false,
                       data:[
-                        9,
-                        3,
-                        11
+                        22.8,
+                        15.5,
+                        14,
+                        4.7
                       ],
                       backgroundColor:[
                         '#95D2BA',

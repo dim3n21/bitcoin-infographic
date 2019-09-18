@@ -10,8 +10,8 @@ const Slide2 = () => {
                  <Row>
                         <Col lg={{span: 12}} sm={{span: 24}}>
                               <div className="audience_left">
-                                    <h2 className="audience_left_header">Who uses bitcoin?</h2>
-                                    <p className="audience_left_copy">It can be used to buy or sell items from people and companies that accept bitcoin as payment, but it differs in several key ways from traditional currencies.</p>
+                                    <h2 className="audience_left_header">Email Automation</h2>
+                                    <p className="audience_left_copy">Transactional emails have 8x more opens and clicks than any other type of email and can generate 6x more revenue.</p>
                               </div>
                         </Col>
                         <Col lg={{span: 12}} sm={{span: 24}}>
@@ -25,10 +25,10 @@ const Slide2 = () => {
                                                       <p style={{lineHeight: '2.3rem'}}><span
                                                       style={{
                                                             fontSize: '0.9rem'
-                                                            }}>35 y.o</span> <br/><span style={{
+                                                            }}>B2B</span> <br/><span style={{
                                                             fontSize: '2.5rem',
                                                             fontWeight: '700'}}>
-                                                      60%</span></p>
+                                                      78%</span></p>
                                                 </div>
                                                 <div class="popover"></div>
                                           </div> 
@@ -41,10 +41,10 @@ const Slide2 = () => {
                                                       <p style={{lineHeight: '2.3rem'}}><span
                                                       style={{
                                                             fontSize: '0.9rem'
-                                                            }}>Men</span> <br/><span style={{
+                                                            }}>B2C</span> <br/><span style={{
                                                             fontSize: '2.5rem',
                                                             fontWeight: '700'}}>
-                                                      91%</span></p>
+                                                      82%</span></p>
                                                 </div>
                                                 <div class="popover"></div>
                                           </div> 
@@ -60,10 +60,10 @@ const Slide2 = () => {
                                                       <p style={{lineHeight: '2.3rem'}}><span
                                                       style={{
                                                             fontSize: '0.9rem'
-                                                            }}>U.S</span> <br/><span style={{
+                                                            }}>People</span> <br/><span style={{
                                                             fontSize: '2.5rem',
                                                             fontWeight: '700'}}>
-                                                      64%</span></p>
+                                                      63</span></p>
                                                 </div>
                                                 <div class="popover"></div>
                                           </div> 

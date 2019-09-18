@@ -10,8 +10,8 @@ const Slide3 = () => {
                   <Row>
                         <Col lg={{span: 12}} sm={{span: 24}}>
                               <div className="popularity_left">
-                                    <h2 className="popularity_left_header" >How popular is bitcoin?</h2>
-                                    <p className="popularity_left_copy">In one day — on December 7, 2017 — there were 155.6K tweets about bitcoin. Even the lowest point, on January 8, 2018, saw 30.6K bitcoin tweets.</p>
+                                    <h2 className="popularity_left_header" >Most popular email clients</h2>
+                                    <p className="popularity_left_copy">Apple Mail and Gmail lead other email clients by a longshot. In fact, Gmail just announced they have surpassed 1.5 billion users on their platform.</p>
                               </div>
                         </Col>
                         <Col lg={{span: 12}} sm={{span: 24}}>
@@ -20,28 +20,28 @@ const Slide3 = () => {
                                           <Col span={8} align="center">
                                                 <div style={{
                                                       paddingLeft: '10px',
-                                                      marginBottom: '-15px'}}>something</div>
-                                                <CountUp className="popularity_right_counter" style={{color: '#FF634D'}} end={56} />
+                                                      marginBottom: '-15px'}}>Gmail</div>
+                                                <CountUp className="popularity_right_counter" style={{color: '#95D2BA'}} end={22.8} decimals={1} />
                                                 
                                           </Col>
                                           <Col span={8} align="center">
                                                 <div style={{
                                                       paddingLeft: '10px',
-                                                      marginBottom: '-15px'}}>something</div>
+                                                      marginBottom: '-15px'}}>iPhone</div>
                                                 <CountUp
                                                       className="popularity_right_counter"
                                                       style={{color: '#FDD982'}}
-                                                      end={56} />
+                                                      end={15.5} decimals={1} />
                                                 
                                           </Col>
                                           <Col span={8} align="center">
                                                 <div style={{
                                                       paddingLeft: '10px',
-                                                      marginBottom: '-15px'}}>something</div>
+                                                      marginBottom: '-15px'}}>Apple mail</div>
                                                 <CountUp
                                                       className="popularity_right_counter"
-                                                      style={{color: '#95D2BA'}}
-                                                      end={56} />
+                                                      style={{color: '#FF634D'}}
+                                                      end={14} decimals={1} />
                                                 
                                           </Col>
                                     </Row>
