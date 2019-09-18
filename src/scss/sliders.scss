@@ -28,6 +28,8 @@
 }
 
 
+
+
 // SLIDER - 2 -
 
 .audience {
@@ -72,10 +74,135 @@
       }
 
       &_right {
+            &_counter {
+                  font-size: 5rem;
+                  font-weight: 900;
+            }
+      }
+}
+
+.desktop_mobile {
+      text-align: left;
+      font-family: 'Roboto', sans-serif;
+      &_left {
+            padding: 6rem;
+            &_header {
+                  font-size: 5rem;
+                  font-weight: 700;
+                  animation-name: moveInLeft;
+                  animation-duration: 2s;
+            }
+            &_copy {
+                  font-size: 1.5rem;
+                  animation-name: moveInRight;
+                  animation-duration: 2s;
+            }
+      }
+
+      &_right {
            
             &_counter {
                   font-size: 5rem;
                   font-weight: 900;
+            }
+      }
+}
+
+@media (max-width: $sm) {
+      .popularity {
+            &_left {
+                  padding: 1.5rem;
+                  text-align: center;
+                  &_header {
+                        font-size: 3rem;
+                        font-weight: 700;
+                  }
+            }
+            &_right {
+                  &_counter {
+                        font-size: 2rem;
+                        font-weight: 900;
+                  }
+            }
+      }
+
+      .bitcoin {
+            &_left {
+                  padding: 1.5rem;
+                  text-align: center;
+                  &_header {
+                        font-size: 3rem;
+                        font-weight: 700;
+                  }
+            }
+      }
+
+      .audience {
+            &_left {
+                  padding: 1.5rem;
+                  text-align: center;
+                  &_header {
+                        font-size: 3rem;
+                        font-weight: 700;
+                  }
+            }
+      }
+
+      .desktop_mobile {
+            &_left {
+                  padding: 1.5rem;
+                  text-align: center;
+                  &_header {
+                        font-size: 3rem;
+                        font-weight: 700;
+                  }
+            }
+            &_right {
+                  &_counter {
+                        font-size: 4rem;
+                        font-weight: 900;
+                  }
+            }
+      }
+}
+
+@media (max-width: $xl) {
+      .popularity {
+            &_left {
+                  padding: 1.5rem;
+                  text-align: center;
+                  &_header {
+                        font-size: 3rem;
+                        font-weight: 700;
+                  }
+            }
+            &_right {
+                  &_counter {
+                        font-size: 3rem;
+                        font-weight: 900;
+                  }
+            }
+      }
+
+      .bitcoin {
+            &_left {
+                  padding: 1.5rem;
+                  text-align: center;
+                  &_header {
+                        font-size: 3rem;
+                        font-weight: 700;
+                  }
+            }
+      }
+
+      .audience {
+            &_left {
+                  padding: 1.5rem;
+                  text-align: center;
+                  &_header {
+                        font-size: 3rem;
+                        font-weight: 700;
+                  }
             }
       }
 }

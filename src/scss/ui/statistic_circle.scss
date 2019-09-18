@@ -1,130 +1,49 @@
-.wrapper {
-	margin: 10px;
-	width: 400px;
-	height: 250px;
-	overflow: hidden;
-	backface-visibility: hidden;
-	position:relative
-}
 
-.right {
-	border: $base-color solid 20px;
-	height: 230px;
-	width: 230px;
-	border-radius:350px;
-	border-top-color: transparent;
-	border-left-color: transparent;
-	position: absolute;
-	transform: rotate(-45deg);
-	animation: rota2 500ms linear;
-  -moz-animation: rota2 500ms linear;
-  -o-animation: rota2 500ms linear;
-  -webkit-animation: rota2 500ms linear;
-}
-
-@keyframes rota2 {
-	from{ transform:rotate(-225deg);}
-	to { transform: rotate(-45deg);}
-}
-
-@-o-keyframes rota2 {
-	from{ transform:rotate(-225deg);}
-	to { transform: rotate(-45deg);}
-}
-
-@-moz-keyframes rota2 {
-	from{ transform:rotate(-225deg);}
-	to { transform: rotate(-45deg);}
-}
-@-webkit-keyframes rota2 {
-	from{ transform:rotate(-225deg);}
-	to { transform: rotate(-45deg);}
-}
-
-.left {
-	border: $base-color solid 20px;
-	height: 230px;
-	width: 230px;
-	border-radius:350px;
-	border-bottom-color: transparent;
-	border-right-color: transparent;
-	position: absolute;
-	transform: rotate(315deg);
-	animation: rota 1000ms linear;
-  -o-animation: rota 1000ms linear;
-  -moz-animation: rota 1000ms linear;
-  -webkit-animation: rota 1000ms linear;
-}
-@keyframes rota {
-	from {transform: rotate(-45deg);}
-	to { transform: rotate(315deg);}
-}
-@-o-keyframes rota {
-	from {transform: rotate(-45deg);}
-	to { transform: rotate(315deg);}
-}
-@moz-keyframes rota {
-	from {transform: rotate(-45deg);}
-	to { transform: rotate(315deg);}
-}
-@-webkit-keyframes rota {
-	from {transform: rotate(-45deg);}
-	to { transform: rotate(315deg);}
-}
-
-.middle {
-  color: $second-color;
-  text-align: center;
-  font-size: 20px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-	width: 130px;
-	height: 130px;
-	left: 50px;
-	top: 50px;
-	border-radius: 150px;
+.pcircle {
 	position: relative;
-	z-index: 4;
-	backface-visibility: hidden;
+	margin: 10;
+	width: 300px;
 }
 
-.popover {
-	background: white;
-	width: 80px;
-	height: 162px;
-	position:absolute;
-	top: -3px;
-	left: -3px;
-	opacity:0;
-	z-index:2;
-	animation: popover 500ms linear;
-  -moz-animation: popover 500ms linear;
-  -o-animation: popover 500ms linear;
-  -webkit-animation: popover 500ms linear;
+.pcircle_percentage {
+	display: block;
+	width: 100%;
+	margin: 0 auto;
+	position: absolute;
+	top: 100px;
+	left: 0px;
+	text-align: center;
+	font-family: 'Roboto', sans-serif;
+	color: #95D2BA;
+	font-size: 4rem;
 }
 
-@keyframes popover {
-	0% {opacity: 1;}
-	99%{opacity:1;}
-	100% {opacity:0;}
+@media (max-width: $xl) {
+	.pcircle {
+		margin: 5;
+		width: 150px;
+	}
+	.pcircle_percentage {
+		top: 45px;
+		left: 0px;
+		text-align: center;
+		font-family: 'Roboto', sans-serif;
+		color: #95D2BA;
+		font-size: 2.5rem;
+	}
 }
 
-@-o-keyframes popover {
-	0% {opacity: 1;}
-	99%{opacity:1;}
-	100% {opacity:0;}
-}
-
-@-moz-keyframes popover {
-	0% {opacity: 1;}
-	99%{opacity:1;}
-	100% {opacity:0;}
-}
-
-@-webkit-keyframes popover {
-	0% {opacity: 1;}
-	99%{opacity:1;}
-	100% {opacity:0;}
+@media (max-width: $xl) {
+	.pcircle {
+		margin: 5;
+		width: 150px;
+	}
+	.pcircle_percentage {
+		top: 45px;
+		left: 0px;
+		text-align: center;
+		font-family: 'Roboto', sans-serif;
+		color: #95D2BA;
+		font-size: 2.5rem;
+	}
 }

@@ -38,15 +38,7 @@ class Main extends Component {
 
             return (
                   <div className="App">
-                        <div 
-                              style={{
-                                    textTransform: 'uppercase',
-                                    fontSize: '2rem',
-                                    color: '#FF634D',
-                                    display: 'block',
-                                    width: '100%',
-                                    padding: '3rem 0 0 4rem'
-                              }}>
+                        <div className='logo'>
                               Email Marketing Statistic</div>
                         <div className='navigation'>
                               <ul className="navigation_list">

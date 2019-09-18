@@ -6,19 +6,19 @@ import ChartRadar from '../Chart/ChartRadar';
 
 const Slide4 = () => {
       return (
-            <div className="popularity">
+            <div className="desktop_mobile">
                   <Row>
                         <Col lg={{span: 12}} sm={{span: 24}}>
-                              <div className="popularity_left">
-                                    <h2 className="popularity_left_header" >Desktop VS Mobile</h2>
-                                    <p className="popularity_left_copy">About 63% of emails are opened on mobile devices. – <a     href="https://www.campaignmonitor.com"
+                              <div className="desktop_mobile_left">
+                                    <h2 className="desktop_mobile_left_header" >Desktop VS Mobile</h2>
+                                    <p className="desktop_mobile_left_copy">About 63% of emails are opened on mobile devices. – <a     href="https://www.campaignmonitor.com"
                                                       style={{textDecoration: 'none',
                                                       color: '#FF634D'
                                                             }} target="_blank">Campaign Monitor</a></p>
                               </div>
                         </Col>
                         <Col lg={{span: 12}} sm={{span: 24}}>
-                              <div className="popularity_right">
+                              <div className="desktop_mobile_right">
                                     <Row>
                                           <Col span={24}>
                                                 <ChartRadar />
@@ -29,7 +29,7 @@ const Slide4 = () => {
                                                 <div style={{
                                                       paddingLeft: '10px',
                                                       marginBottom: '-15px'}}>Mobile</div>
-                                                <CountUp className="popularity_right_counter" style={{color: '#95D2BA'}} end={57} />
+                                                <CountUp className="desktop_mobile_right_counter" style={{color: '#95D2BA'}} end={57} />
                                                 
                                           </Col>
                                           <Col span={12} align="center">
@@ -37,7 +37,7 @@ const Slide4 = () => {
                                                       paddingLeft: '10px',
                                                       marginBottom: '-15px'}}>Desktop</div>
                                                 <CountUp
-                                                      className="popularity_right_counter"
+                                                      className="desktop_mobile_right_counter"
                                                       style={{color: '#FDD982'}}
                                                       end={43} />
                                                 
